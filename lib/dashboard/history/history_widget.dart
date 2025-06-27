@@ -309,45 +309,55 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                                         .fontStyle,
                                               ),
                                         ),
-                                        Container(
-                                          width: double.infinity,
-                                          height: 400.0,
-                                          child: FlutterFlowLineChart(
-                                            data: [
-                                              FFLineChartData(
-                                                xData: maxWidthHistoryRecordList
-                                                    .map((d) => d.temperature)
-                                                    .toList(),
-                                                yData: maxWidthHistoryRecordList
-                                                    .map((d) => d.temperature)
-                                                    .toList(),
-                                                settings: LineChartBarData(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primary,
-                                                  barWidth: 2.0,
-                                                ),
-                                              )
-                                            ],
-                                            chartStylingInfo: ChartStylingInfo(
-                                              enableTooltip: true,
-                                              backgroundColor:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              showGrid: true,
-                                              borderColor:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              borderWidth: 1.0,
-                                            ),
-                                            axisBounds: AxisBounds(),
-                                            xAxisLabelInfo: AxisLabelInfo(
-                                              reservedSize: 32.0,
-                                            ),
-                                            yAxisLabelInfo: AxisLabelInfo(
-                                              showLabels: true,
-                                              labelInterval: 10.0,
-                                              reservedSize: 40.0,
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 24.0),
+                                          child: Container(
+                                            width: double.infinity,
+                                            height: 400.0,
+                                            child: FlutterFlowLineChart(
+                                              data: [
+                                                FFLineChartData(
+                                                  xData:
+                                                      maxWidthHistoryRecordList
+                                                          .map((d) =>
+                                                              d.temperature)
+                                                          .toList(),
+                                                  yData:
+                                                      maxWidthHistoryRecordList
+                                                          .map((d) =>
+                                                              d.temperature)
+                                                          .toList(),
+                                                  settings: LineChartBarData(
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primary,
+                                                    barWidth: 2.0,
+                                                  ),
+                                                )
+                                              ],
+                                              chartStylingInfo:
+                                                  ChartStylingInfo(
+                                                enableTooltip: true,
+                                                backgroundColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                showGrid: true,
+                                                borderColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
+                                                borderWidth: 1.0,
+                                              ),
+                                              axisBounds: AxisBounds(),
+                                              xAxisLabelInfo: AxisLabelInfo(
+                                                reservedSize: 32.0,
+                                              ),
+                                              yAxisLabelInfo: AxisLabelInfo(
+                                                showLabels: true,
+                                                labelInterval: 10.0,
+                                                reservedSize: 40.0,
+                                              ),
                                             ),
                                           ),
                                         ),
